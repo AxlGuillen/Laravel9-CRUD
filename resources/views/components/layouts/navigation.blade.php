@@ -26,6 +26,10 @@
                             class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('posts.*') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}">
                             Blog
                         </a>
+                        <a href="{{ route('news.index') }}"
+                            class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('news.index') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}">
+                            News
+                        </a>
                         <a href="{{ route('about') }}"
                             class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('about') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}">
                             About

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\AuthenticatedSessionController;
+use App\Http\Controllers\NewsController;
 
 
 Route::get('/', function () {
@@ -32,5 +33,5 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name
 Route::view('/register', 'auth.register')->name('register');
 Route::post('/register', [RegisteredUserController::class, 'store']);
 
-
+Route::resource('news', NewsController::class);
 
