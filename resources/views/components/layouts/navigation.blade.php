@@ -55,11 +55,10 @@
                         @auth
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <a href="{{ route('login') }}"
-                            class="lg:px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white text-slate-400'"
-                            onclick="this.closest('form').submit()">
-                            Logout
-                        </a>
+                            <button type="submit"
+                                class="lg:px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white text-slate-400">
+                                Logout
+                            </button>
                         </form>
                         @endauth
                     </div>
